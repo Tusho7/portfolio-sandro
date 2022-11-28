@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 function Header() {
   return (
@@ -20,9 +20,12 @@ function Header() {
 
         <HeaderText>
           <AboutMe>
-            Nice to meet you!{" "}
+            Nice to meet you!
+            {' '}
             <MyName>
-              I’m <Name>Sandro Tushurashvili.</Name>
+              I’m
+              {' '}
+              <Name>Sandro Tushurashvili.</Name>
             </MyName>
           </AboutMe>
           <Text>
@@ -35,7 +38,7 @@ function Header() {
         </Contact>
       </header>
       <Line>
-        <hr></hr>
+        <hr />
       </Line>
     </div>
   );
