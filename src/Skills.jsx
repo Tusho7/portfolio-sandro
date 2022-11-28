@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 function Skills() {
   return (
@@ -28,7 +28,7 @@ function Skills() {
 
       <RingsImg src="./Images/Logos/pattern-rings.svg" />
 
-      <Line></Line>
+      <Line />
     </div>
   );
 }
