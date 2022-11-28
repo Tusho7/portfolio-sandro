@@ -8,15 +8,18 @@ function Header() {
         <HeaderTitle>
           <HeaderMyName>Sandro Tushurashvili</HeaderMyName>
           <HeaderIcons>
-            <img src="/Images/Icons/icon-github.svg" />
-            <img src="./Images/Icons/icon-frontend-mentor.svg" />
-            <img src="./Images/Icons/icon-linkedin.svg" />
-            <img src="./Images/Icons/icon-twitter.svg" />
+            <img src="/Images/Icons/icon-github.svg" alt="github" />
+            <img
+              src="./Images/Icons/icon-frontend-mentor.svg"
+              alt="front-end-mentor"
+            />
+            <img src="./Images/Icons/icon-linkedin.svg" alt="linkedin" />
+            <img src="./Images/Icons/icon-twitter.svg" alt="twitter" />
           </HeaderIcons>
-          <ProfileImg src="./Images/profile.jpg" />
+          <ProfileImg src="./Images/profile.jpg" alt="profile" />
         </HeaderTitle>
-        <RingsImg src="./Images/Logos/pattern-rings.svg" />
-        <PatternImg src="./Images/Logos/pattern-circle.svg" />
+        <RingsImg src="./Images/Logos/pattern-rings.svg" alt="pattern" />
+        <PatternImg src="./Images/Logos/pattern-circle.svg" alt="pattern" />
 
         <HeaderText>
           <AboutMe>
