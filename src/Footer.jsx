@@ -43,7 +43,8 @@ function Footer() {
             onChange={handleChange}
           />
           {error && <p style={{ color: "red" }}>{error}</p>}
-          <Line></Line>
+          {error && <ErrorLine style={{ color: "red" }} />}
+          {!error && <Line />}
           <Input type="textarea" placeholder="MESSAGE" required />
           <Line />
           <RingsImg src="./Images/Logos/pattern-rings.svg" alt="pattern" />
@@ -152,6 +153,14 @@ const Input = styled.input`
       transform: translateY(-3vh);
     }
   }
+`;
+
+const ErrorLine = styled.hr`
+  width: 95%;
+  margin: auto;
+  border: none;
+  height: 2px;
+  background-color: red;
 `;
 
 const Line = styled.hr`
