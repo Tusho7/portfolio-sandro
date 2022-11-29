@@ -1,6 +1,7 @@
-import './App.css';
-import Header from './Header';
-import Skills from './Skills';
+import "./App.css";
+import Header from "./Header";
+import Projects from "./Projects";
+import Skills from "./Skills";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <Header />
       <Skills />
+      <Projects />
     </div>
   );
 }
