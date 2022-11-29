@@ -12,6 +12,7 @@ module.exports = {
   plugins: ["react"],
   rules: {
     "react/no-unescaped-entities": "off",
-    "quotes": "off"
+    quotes: "off",
+    "react/react-in-jsx-scope": "off",
   },
 };
