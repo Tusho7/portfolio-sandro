@@ -1,6 +1,11 @@
+/* eslint-disable */
 import "./App.css";
+import Footer from "./Footer";
+/* eslint-disable */
 import Header from "./Header";
+/* eslint-disable */
 import Projects from "./Projects";
+/* eslint-disable */
 import Skills from "./Skills";
 
 function App() {
@@ -10,6 +15,7 @@ function App() {
       <Header />
       <Skills />
       <Projects />
+      <Footer />
     </div>
   );
 }
