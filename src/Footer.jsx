@@ -1,6 +1,26 @@
 import styled from "styled-components";
+import { useState } from "react";
 
 function Footer() {
+  const [message, setMessage] = useState("");
+  const [error, setError] = useState(null);
+
+  function isValidEmail(email) {
+    /* eslint-disable */
+    return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+      email
+    );
+  }
+
+  const handleChange = (event) => {
+    if (!isValidEmail(event.target.value)) {
+      setError("Sorry, invalid format here");
+    } else {
+      setError(null);
+    }
+
+    setMessage(event.target.value);
+  };
   return (
     <div>
       <FooterDivFirst>
@@ -15,8 +35,15 @@ function Footer() {
         <MessageDiv>
           <Input type="text" placeholder="NAME" required />
           <Line />
-          <Input type="email" placeholder="EMAIL" required />
-          <Line />
+          <Input
+            type="email"
+            placeholder="EMAIL"
+            required
+            value={message}
+            onChange={handleChange}
+          />
+          {error && <p style={{ color: "red" }}>{error}</p>}
+          <Line></Line>
           <Input type="textarea" placeholder="MESSAGE" required />
           <Line />
           <RingsImg src="./Images/Logos/pattern-rings.svg" alt="pattern" />
