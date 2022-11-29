@@ -42,8 +42,11 @@ function Footer() {
             value={message}
             onChange={handleChange}
           />
-          {error && <p style={{ color: "red" }}>{error}</p>}
           {error && <ErrorLine style={{ color: "red" }} />}
+          {error && (
+            <ErrorMessage style={{ color: "red" }}>{error}</ErrorMessage>
+          )}
+
           {!error && <Line />}
           <Input type="textarea" placeholder="MESSAGE" required />
           <Line />
@@ -153,6 +156,18 @@ const Input = styled.input`
       transform: translateY(-3vh);
     }
   }
+`;
+
+const ErrorMessage = styled.p`
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.166667px;
+  color: #ff6f5b;
+  padding-top: 5px;
+  padding-right: 10px;
 `;
 
 const ErrorLine = styled.hr`
