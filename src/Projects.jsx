@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import data from "./Data.json";
 
 function Projects() {
   return (
@@ -15,163 +16,26 @@ function Projects() {
       </ProjectsTitles>
 
       <ProjectsSection>
-        <div>
-          <Img
-            src="/Images/Projects/interactive-comments-section.jpg"
-            alt="interactive-comments-section"
-          />
-          <Title>INTERACTIVE COMMENTS SECTION</Title>
-          <MadeWith>
-            <p>REACT</p>
-            <p>STYLED COMPONENTS</p>
-          </MadeWith>
+        {data.projects.map((project) => (
+          <div key={project.title}>
+            <Img src={project.img} />
+            <Title>{project.title}</Title>
+            <MadeWith>
+              <p>{project.madeWith.title}</p>
+              <p>{project.madeWith.secondTitle}</p>
+              <p>{project.madeWith.thirdTitle}</p>
+            </MadeWith>
 
-          <ViewProject>
-            <ViewMyProjectCode
-              href="https://interactive-comments-section-nif5oois6-tusho7.vercel.app/"
-              target="_blank"
-            >
-              VIEW PROJECT
-            </ViewMyProjectCode>
-            <ViewMyProjectCode
-              href="https://github.com/Tusho7/interactive-comments-section"
-              target="_blank"
-            >
-              VIEW CODE
-            </ViewMyProjectCode>
-          </ViewProject>
-        </div>
-
-        <div>
-          <Img
-            src="/Images/Projects/count-down-timer.jpg"
-            alt="count-down-timer"
-          />
-          <Title>COUNT DOWN TIMER</Title>
-          <MadeWith>
-            <p>REACT</p>
-          </MadeWith>
-
-          <ViewProject>
-            <ViewMyProjectCode
-              href="https://count-down-timer-68dctfygq-tusho7.vercel.app/"
-              target="_blank"
-            >
-              VIEW PROJECT
-            </ViewMyProjectCode>
-            <ViewMyProjectCode
-              href="https://github.com/Tusho7/count-down-timer"
-              target="_blank"
-            >
-              VIEW CODE
-            </ViewMyProjectCode>
-          </ViewProject>
-        </div>
-
-        <div>
-          <Img
-            src="/Images/Projects/single-page-design.jpg"
-            alt="single-page-design"
-          />
-          <Title>SINGLE PAGE DESIGN</Title>
-          <MadeWith>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JAVASCRIPT</p>
-          </MadeWith>
-
-          <ViewProject>
-            <ViewMyProjectCode
-              href="https://tusho7.github.io/single-page-design/"
-              target="_blank"
-            >
-              VIEW PROJECT
-            </ViewMyProjectCode>
-            <ViewMyProjectCode
-              href="https://github.com/Tusho7/single-page-design"
-              target="_blank"
-            >
-              VIEW CODE
-            </ViewMyProjectCode>
-          </ViewProject>
-        </div>
-
-        <div>
-          <Img
-            src="/Images/Projects/interactive-pricing-component.jpg"
-            alt="interactive-pricing-component"
-          />
-          <Title>INTERACTIVE PIRICING COMPONENT</Title>
-          <MadeWith>
-            <p>HTML</p>
-            <p>CSS</p>
-          </MadeWith>
-
-          <ViewProject>
-            <ViewMyProjectCode
-              href="https://tusho7.github.io/interactive-pricing-component/"
-              target="_blank"
-            >
-              VIEW PROJECT
-            </ViewMyProjectCode>
-            <ViewMyProjectCode
-              href="https://github.com/Tusho7/interactive-pricing-component"
-              target="_blank"
-            >
-              VIEW CODE
-            </ViewMyProjectCode>
-          </ViewProject>
-        </div>
-
-        <div>
-          <Img src="/Images/Projects/tic-tac-toe.jpg" alt="tic-tac-toe" />
-          <Title>TIC TAC TOE</Title>
-          <MadeWith>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JAVASCRIPT</p>
-          </MadeWith>
-
-          <ViewProject>
-            <ViewMyProjectCode
-              href="https://tusho7.github.io/tic-tac-toe/"
-              target="_blank"
-            >
-              VIEW PROJECT
-            </ViewMyProjectCode>
-            <ViewMyProjectCode
-              href="https://github.com/Tusho7/tic-tac-toe"
-              target="_blank"
-            >
-              VIEW CODE
-            </ViewMyProjectCode>
-          </ViewProject>
-        </div>
-
-        <div>
-          <Img src="/Images/Projects/tip-calculator.jpg" alt="tip-calculator" />
-          <Title>TIP CALCULATOR</Title>
-          <MadeWith>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JAVASCRIPT</p>
-          </MadeWith>
-
-          <ViewProject>
-            <ViewMyProjectCode
-              href="https://tusho7.github.io/tip-calculator-app/"
-              target="_blank"
-            >
-              VIEW PROJECT
-            </ViewMyProjectCode>
-            <ViewMyProjectCode
-              href="https://github.com/Tusho7/tip-calculator-app"
-              target="_blank"
-            >
-              VIEW CODE
-            </ViewMyProjectCode>
-          </ViewProject>
-        </div>
+            <ViewProject>
+              <ViewMyProjectCode href={project.viewProjectLive} target="_blank">
+                VIEW PROJECT
+              </ViewMyProjectCode>
+              <ViewMyProjectCode href={project.viewProjectCode} target="_blank">
+                VIEW CODE
+              </ViewMyProjectCode>
+            </ViewProject>
+          </div>
+        ))}
       </ProjectsSection>
     </div>
   );
