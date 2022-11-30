@@ -12,9 +12,11 @@ function App() {
   return (
     /* eslint-disable */
     <div className="App">
-      <Header />
-      <Skills />
-      <Projects />
+      <div className="Padding">
+        <Header />
+        <Skills />
+        <Projects />
+      </div>
       <Footer />
     </div>
   );
