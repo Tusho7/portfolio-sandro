@@ -8,9 +8,12 @@
 
 body{
   background-color: #000000;
-  padding-left: 15px;
-  padding-right: 15px;
   width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
+}
+
+.Padding{
+  padding-left: 15px;
+  padding-right: 15px;
 }
