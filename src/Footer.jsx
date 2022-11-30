@@ -110,6 +110,8 @@ const ContactMe = styled.p`
   padding-top: 60px;
 `;
 const FooterText = styled.p`
+  width: 92%;
+  margin: 20px auto 0px auto;
   font-family: "Space Grotesk";
   font-style: normal;
   font-weight: 500;
