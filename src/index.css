@@ -7,10 +7,27 @@
 }
 
 body{
-  background-color: #000000;
-  padding-left: 15px;
-  padding-right: 15px;
+  background: #151515;
   width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
+}
+
+.Padding{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px){
+  .Padding{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: 1440px){
+  .Padding{
+    padding-left: 165px;
+    padding-right: 165px;
+  }
 }

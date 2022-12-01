@@ -108,8 +108,15 @@ const ContactMe = styled.p`
   letter-spacing: -1.13636px;
   color: #ffffff;
   padding-top: 60px;
+  @media (min-width: 768px) {
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -2.04545px;
+  }
 `;
 const FooterText = styled.p`
+  width: 92%;
+  margin: 20px auto 0px auto;
   font-family: "Space Grotesk";
   font-style: normal;
   font-weight: 500;
@@ -118,6 +125,9 @@ const FooterText = styled.p`
   text-align: center;
   color: #d9d9d9;
   margin-top: 20px;
+  @media (min-width: 768px) {
+    width: 58%;
+  }
 `;
 
 const MessageDiv = styled.div`
@@ -127,6 +137,10 @@ const MessageDiv = styled.div`
   flex-direction: column;
   align-items: flex-end;
   position: relative;
+  @media (min-width: 768px) {
+    width: 58%;
+    margin: 48px auto 0px auto;
+  }
 `;
 const Input = styled.input`
   border: none;
@@ -187,6 +201,10 @@ const RingsImg = styled.img`
   position: absolute;
   right: 200px;
   top: 180px;
+  @media (min-width: 768px) {
+    right: 435px;
+    top: 260px;
+  }
 `;
 
 const SendMessage = styled.p`
@@ -213,12 +231,23 @@ const FooterDivSecond = styled.div`
   padding-bottom: 60px;
   padding-top: 87px;
   background: #242424;
+  @media (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
 `;
 
 const NameAndIcons = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 39px;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 95%;
+    margin: 30px auto 0px auto;
+  }
 `;
 
 const MyName = styled.p`
@@ -230,6 +259,11 @@ const MyName = styled.p`
   text-align: center;
   letter-spacing: -0.333333px;
   color: #ffffff;
+  @media (min-width: 768px) {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -0.444444px;
+  }
 `;
 
 const HeaderIcons = styled.div`
@@ -237,6 +271,10 @@ const HeaderIcons = styled.div`
   justify-content: center;
   gap: 25.6px;
   margin-top: 20px;
+  align-items: center;
+  @media (min-width: 768px) {
+    margin-top: 0px;
+  }
 `;
 
 const Img = styled.img`
