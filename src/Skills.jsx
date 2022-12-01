@@ -41,6 +41,10 @@ const Container = styled.div`
     grid-template-columns: auto auto;
     column-gap: 228px;
   }
+  @media (min-width: 1440px) {
+    grid-template-columns: auto auto auto;
+    column-gap: 251px;
+  }
 `;
 
 const HtmlDiv = styled.div`
@@ -104,5 +108,8 @@ const RingsImg = styled.img`
   @media (min-width: 768px) {
     top: 850px;
     left: 550px;
+  }
+  @media (min-width: 1440px) {
+    left: 1150px;
   }
 `;
