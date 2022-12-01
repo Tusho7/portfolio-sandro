@@ -26,12 +26,9 @@ function Header() {
 
           <HeaderText>
             <AboutMe>
-              Nice to meet you!
-              {" "}
+              Nice to meet you!{" "}
               <MyName>
-                I’m
-                {' '}
-                <Name>Sandro Tushurashvili.</Name>
+                I’m <Name>Sandro Tushurashvili.</Name>
               </MyName>
             </AboutMe>
             <Text>
@@ -52,12 +49,9 @@ function Header() {
         <TabletViewTextContainer>
           <HeaderMyName>Sandro Tushurashvili</HeaderMyName>
           <AboutMe>
-            Nice to meet you!
-            {" "}
+            Nice to meet you!{" "}
             <MyName>
-              I’m
-              {' '}
-              <Name>Sandro Tushurashvili.</Name>
+              I’m <Name>Sandro Tushurashvili.</Name>
             </MyName>
           </AboutMe>
           <Text>
@@ -85,9 +79,9 @@ function Header() {
           <ProfileImg src="./Images/profile.jpg" alt="profile" />
         </TabletViewIconsAndProfile>
       </TabletView>
-      <Line>
+      <TabletLine>
         <hr />
-      </Line>
+      </TabletLine>
     </div>
   );
 }
@@ -258,9 +252,6 @@ const ContactMe = styled.span`
 
 const Line = styled.div`
   margin-top: 80px;
-  @media (min-width: 768px) {
-    margin-top: 60px;
-  }
 `;
 
 const TabletView = styled.div`
@@ -283,5 +274,13 @@ const TabletViewIconsAndProfile = styled.div`
       #242424 0%
     );
     transform: translateX(-60px);
+  }
+`;
+
+const TabletLine = styled.div`
+  display: none;
+  @media (min-width: 768px) {
+    margin-top: 60px;
+    display: block;
   }
 `;
