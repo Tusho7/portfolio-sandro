@@ -26,9 +26,12 @@ function Header() {
 
           <HeaderText>
             <AboutMe>
-              Nice to meet you!{" "}
+              Nice to meet you!
+              {" "}
               <MyName>
-                I’m <Name>Sandro Tushurashvili.</Name>
+                I’m
+                {' '}
+                <Name>Sandro Tushurashvili.</Name>
               </MyName>
             </AboutMe>
             <Text>
@@ -49,9 +52,12 @@ function Header() {
         <TabletViewTextContainer>
           <HeaderMyName>Sandro Tushurashvili</HeaderMyName>
           <AboutMe>
-            Nice to meet you!{" "}
+            Nice to meet you!
+            {" "}
             <MyName>
-              I’m <Name>Sandro Tushurashvili.</Name>
+              I’m
+              {' '}
+              <Name>Sandro Tushurashvili.</Name>
             </MyName>
           </AboutMe>
           <Text>
@@ -129,6 +135,9 @@ const HeaderIcons = styled.div`
     gap: 32px;
     margin-left: 60px;
   }
+  @media (min-width: 1440px) {
+    margin-top: 44px;
+  }
 `;
 
 const ProfileImg = styled.img`
@@ -153,6 +162,9 @@ const RingsImg = styled.img`
     left: -300px;
     border-radius: 0px;
   }
+  @media (min-width: 1440px) {
+    left: -200px;
+  }
 `;
 
 const PatternImg = styled.img`
@@ -163,6 +175,10 @@ const PatternImg = styled.img`
     left: 700px;
     top: 370px;
     z-index: 1;
+  }
+  @media (min-width: 1440px) {
+    left: 850px;
+    top: 440px;
   }
 `;
 
@@ -193,6 +209,12 @@ const AboutMe = styled.p`
     text-align: left;
     z-index: 1;
   }
+  @media (min-width: 1440px) {
+    width: 100%;
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+  }
 `;
 
 const MyName = styled.span`
@@ -201,6 +223,11 @@ const MyName = styled.span`
     font-size: 72px;
     line-height: 72px;
     letter-spacing: -2.04545px;
+  }
+  @media (min-width: 1440px) {
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -2.5px;
   }
 `;
 
@@ -225,6 +252,10 @@ const Text = styled.p`
     line-height: 28px;
     text-align: left;
     width: 90%;
+    margin-top: 66px;
+  }
+  @media (min-width: 1440px) {
+    margin-top: 43px;
   }
 `;
 
@@ -233,6 +264,9 @@ const Contact = styled.div`
   margin: 24px auto 0px auto;
   @media (min-width: 768px) {
     margin: 34px auto 0px 0px;
+  }
+  @media (min-width: 1440px) {
+    margin: 66px auto 0px 0px;
   }
 `;
 
@@ -248,6 +282,10 @@ const ContactMe = styled.span`
   text-decoration-color: #4ee1a0;
   text-decoration-thickness: 2px;
   text-underline-offset: 10px;
+  &:hover {
+    color: #4ee1a0;
+    cursor: pointer;
+  }
 `;
 
 const Line = styled.div`
@@ -265,6 +303,9 @@ const TabletViewTextContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 29px;
+  @media (min-width: 1440px) {
+    margin-top: 39px;
+  }
 `;
 const TabletViewIconsAndProfile = styled.div`
   @media (min-width: 768px) {
@@ -275,6 +316,9 @@ const TabletViewIconsAndProfile = styled.div`
     );
     transform: translateX(-60px);
   }
+  @media (min-width: 1440px) {
+    transform: translateX(0px);
+  }
 `;
 
 const TabletLine = styled.div`
@@ -282,5 +326,8 @@ const TabletLine = styled.div`
   @media (min-width: 768px) {
     margin-top: 60px;
     display: block;
+  }
+  @media (min-width: 1440px) {
+    margin-top: 65px;
   }
 `;
