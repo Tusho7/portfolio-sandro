@@ -30,7 +30,7 @@
         "thirdTitle": "JAVASCRIPT"
       },
       "viewProjectLive": "https://tusho7.github.io/single-page-design/",
-      "viewProjectCode": "https://tusho7.github.io/single-page-design"
+      "viewProjectCode": "https://github.com/Tusho7/single-page-design"
     },
 
     {
@@ -42,7 +42,7 @@
         "thirdTitle": "JAVASCRIPT"
       },
       "viewProjectLive": "https://tusho7.github.io/interactive-pricing-component/",
-      "viewProjectCode": "https://tusho7.github.io/interactive-pricing-component"
+      "viewProjectCode": "https://github.com/Tusho7/interactive-pricing-component"
     },
 
     {
@@ -54,7 +54,7 @@
         "thirdTitle": "JAVASCRIPT"
       },
       "viewProjectLive": "https://tusho7.github.io/tic-tac-toe/",
-      "viewProjectCode": "https://tusho7.github.io/tic-tac-toe"
+      "viewProjectCode": "https://github.com/Tusho7/tic-tac-toe"
     },
     {
       "img": "/Images/Projects/tip-calculator.jpg",
@@ -64,8 +64,8 @@
         "secondTitle": "CSS",
         "thirdTitle": "JAVASCRIPT"
       },
-      "viewProjectLive": "https://tusho7.github.io/tip-calculator/",
-      "viewProjectCode": "https://tusho7.github.io/tip-calculator"
+      "viewProjectLive": "https://tusho7.github.io/tip-calculator-app/",
+      "viewProjectCode": "https://github.com/Tusho7/tip-calculator-app"
     }
   ]
 }
