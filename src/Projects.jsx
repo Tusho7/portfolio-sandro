@@ -198,12 +198,25 @@ const ProjectsSection = styled.div`
     column-gap: 20px;
     padding-bottom: 100px;
   }
+  @media (min-width: 1440px) {
+    column-gap: 30px;
+  }
 `;
 
 const Img = styled.img`
   width: 345px;
   height: 253px;
   margin-top: 40px;
+  @media (min-width: 1440px) {
+    width: 540px;
+    height: 400px;
+    &:hover {
+      cursor: pointer;
+      background: #000000;
+      mix-blend-mode: normal;
+      opacity: 0.75;
+    }
+  }
 `;
 
 const ProjectId = styled.p`
@@ -218,6 +231,11 @@ const ProjectId = styled.p`
     font-size: 72px;
     line-height: 72px;
     letter-spacing: -2.04545px;
+  }
+  @media (min-width: 1440px) {
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -2.5px;
   }
 `;
 const ContactMe = styled.a`
@@ -280,6 +298,9 @@ const ViewProject = styled.div`
   text-decoration-color: #4ee1a0;
   @media (min-width: 768px) {
     font-size: 14px;
+  }
+  @media (min-width: 1440px) {
+    display: none;
   }
 `;
 
