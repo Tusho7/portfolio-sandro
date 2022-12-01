@@ -133,6 +133,7 @@ const HeaderIcons = styled.div`
   margin-top: 20px;
   @media (min-width: 768px) {
     gap: 32px;
+    margin-left: 60px;
   }
 `;
 
@@ -165,8 +166,9 @@ const PatternImg = styled.img`
   left: 300px;
   top: 225px;
   @media (min-width: 768px) {
-    left: 720px;
+    left: 700px;
     top: 370px;
+    z-index: 1;
   }
 `;
 
@@ -195,6 +197,7 @@ const AboutMe = styled.p`
     letter-spacing: -2.04545px;
     width: 85%;
     text-align: left;
+    z-index: 1;
   }
 `;
 
@@ -227,6 +230,7 @@ const Text = styled.p`
     font-size: 18px;
     line-height: 28px;
     text-align: left;
+    width: 90%;
   }
 `;
 
@@ -278,5 +282,6 @@ const TabletViewIconsAndProfile = styled.div`
       rgba(36, 36, 36, 0.0001) -10%,
       #242424 0%
     );
+    transform: translateX(-60px);
   }
 `;
