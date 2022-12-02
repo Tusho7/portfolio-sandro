@@ -24,35 +24,38 @@ function Footer() {
   return (
     <div>
       <FooterDivFirst>
-        <div>
-          <ContactMe>Contact</ContactMe>
-          <FooterText>
-            I would love to hear about your project and how I could help. Please
-            fill in the form, and I’ll get back to you as soon as possible.
-          </FooterText>
-        </div>
+        <Contacts>
+          <div>
+            <ContactMe>Contact</ContactMe>
+            <FooterText>
+              I would love to hear about your project and how I could help.
+              Please fill in the form, and I’ll get back to you as soon as
+              possible.
+            </FooterText>
+          </div>
 
-        <MessageDiv>
-          <Input type="text" placeholder="NAME" required />
-          <Line />
-          <Input
-            type="email"
-            placeholder="EMAIL"
-            required
-            value={message}
-            onChange={handleChange}
-          />
-          {error && <ErrorLine style={{ color: "red" }} />}
-          {error && (
-            <ErrorMessage style={{ color: "red" }}>{error}</ErrorMessage>
-          )}
+          <MessageDiv>
+            <Input type="text" placeholder="NAME" required />
+            <Line />
+            <Input
+              type="email"
+              placeholder="EMAIL"
+              required
+              value={message}
+              onChange={handleChange}
+            />
+            {error && <ErrorLine style={{ color: "red" }} />}
+            {error && (
+              <ErrorMessage style={{ color: "red" }}>{error}</ErrorMessage>
+            )}
 
-          {!error && <Line />}
-          <Input type="textarea" placeholder="MESSAGE" required />
-          <Line />
-          <RingsImg src="./Images/Logos/pattern-rings.svg" alt="pattern" />
-          <SendMessage>SEND MESSAGE</SendMessage>
-        </MessageDiv>
+            {!error && <Line />}
+            <Input type="textarea" placeholder="MESSAGE" required />
+            <Line />
+            <RingsImg src="./Images/Logos/pattern-rings.svg" alt="pattern" />
+            <SendMessage>SEND MESSAGE</SendMessage>
+          </MessageDiv>
+        </Contacts>
       </FooterDivFirst>
       <FooterDivSecond>
         <Line />
@@ -96,6 +99,16 @@ export default Footer;
 
 const FooterDivFirst = styled.div`
   background: #242424;
+  @media (min-width: 1440px) {
+    display: flex;
+  }
+`;
+const Contacts = styled.div`
+  @media (min-width: 1440px) {
+    display: flex;
+    width: 78%;
+    margin: 84px auto 0px auto;
+  }
 `;
 
 const ContactMe = styled.p`
@@ -108,8 +121,22 @@ const ContactMe = styled.p`
   letter-spacing: -1.13636px;
   color: #ffffff;
   padding-top: 60px;
+  @media (min-width: 768px) {
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -2.04545px;
+  }
+  @media (min-width: 1440px) {
+    width: 330px;
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+    padding-top: 0px;
+  }
 `;
 const FooterText = styled.p`
+  width: 92%;
+  margin: 20px auto 0px auto;
   font-family: "Space Grotesk";
   font-style: normal;
   font-weight: 500;
@@ -118,6 +145,14 @@ const FooterText = styled.p`
   text-align: center;
   color: #d9d9d9;
   margin-top: 20px;
+  @media (min-width: 768px) {
+    width: 58%;
+  }
+  @media (min-width: 1440px) {
+    width: 65%;
+    margin: 36px 0px;
+    text-align: left;
+  }
 `;
 
 const MessageDiv = styled.div`
@@ -127,6 +162,14 @@ const MessageDiv = styled.div`
   flex-direction: column;
   align-items: flex-end;
   position: relative;
+  @media (min-width: 768px) {
+    width: 58%;
+    margin: 48px auto 0px auto;
+  }
+  @media (min-width: 1440px) {
+    width: 57%;
+    margin-top: 0px;
+  }
 `;
 const Input = styled.input`
   border: none;
@@ -156,6 +199,11 @@ const Input = styled.input`
       transform: translateY(-3vh);
     }
   }
+  @media (min-width: 1440px) {
+    padding-left: 0px;
+    width: 78%;
+    margin: 32px auto 16px auto;
+  }
 `;
 
 const ErrorMessage = styled.p`
@@ -168,6 +216,9 @@ const ErrorMessage = styled.p`
   color: #ff6f5b;
   padding-top: 5px;
   padding-right: 10px;
+  @media (min-width: 1440px) {
+    padding-right: 45px;
+  }
 `;
 
 const ErrorLine = styled.hr`
@@ -176,17 +227,30 @@ const ErrorLine = styled.hr`
   border: none;
   height: 2px;
   background-color: red;
+  @media (min-width: 1440px) {
+    width: 78%;
+  }
 `;
 
 const Line = styled.hr`
   width: 95%;
   margin: auto;
+  @media (min-width: 1440px) {
+    width: 78%;
+  }
 `;
 
 const RingsImg = styled.img`
   position: absolute;
   right: 200px;
   top: 180px;
+  @media (min-width: 768px) {
+    right: 435px;
+    top: 230px;
+  }
+  @media (min-width: 1440px) {
+    right: 1050px;
+  }
 `;
 
 const SendMessage = styled.p`
@@ -202,10 +266,13 @@ const SendMessage = styled.p`
   text-decoration-color: #4ee1a0;
   text-decoration-thickness: 2px;
   text-underline-offset: 10px;
-  margin-right: 5px;
+  margin-right: 9.375px;
   &:hover {
     color: #4ee1a0;
     cursor: pointer;
+  }
+  @media (min-width: 1440px) {
+    margin-right: 45px;
   }
 `;
 
@@ -213,12 +280,31 @@ const FooterDivSecond = styled.div`
   padding-bottom: 60px;
   padding-top: 87px;
   background: #242424;
+  @media (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+  @media (min-width: 1440px) {
+    padding-top: 162px;
+    padding-bottom: 92px;
+  }
 `;
 
 const NameAndIcons = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 39px;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 95%;
+    margin: 30px auto 0px auto;
+  }
+  @media (min-width: 1440px) {
+    width: 78%;
+    margin-top: 47px;
+  }
 `;
 
 const MyName = styled.p`
@@ -230,6 +316,11 @@ const MyName = styled.p`
   text-align: center;
   letter-spacing: -0.333333px;
   color: #ffffff;
+  @media (min-width: 768px) {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -0.444444px;
+  }
 `;
 
 const HeaderIcons = styled.div`
@@ -237,11 +328,15 @@ const HeaderIcons = styled.div`
   justify-content: center;
   gap: 25.6px;
   margin-top: 20px;
+  align-items: center;
+  @media (min-width: 768px) {
+    margin-top: 0px;
+  }
 `;
 
 const Img = styled.img`
   :hover {
-    filter: blur(5px);
+    filter: invert(65%) sepia(100%) hue-rotate(200deg) saturate(0%);
     cursor: pointer;
   }
 `;
