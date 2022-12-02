@@ -10,13 +10,31 @@ function Header() {
             <HeaderMyName>Sandro Tushurashvili</HeaderMyName>
             <div>
               <HeaderIcons>
-                <img src="/Images/Icons/icon-github.svg" alt="github" />
-                <img
+                <a
+                  href="https://github.com/Tusho7"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Img src="/Images/Icons/icon-github.svg" alt="github" />
+                </a>
+                <Img
                   src="./Images/Icons/icon-frontend-mentor.svg"
                   alt="front-end-mentor"
                 />
-                <img src="./Images/Icons/icon-linkedin.svg" alt="linkedin" />
-                <img src="./Images/Icons/icon-twitter.svg" alt="twitter" />
+                <a
+                  href="https://www.linkedin.com/in/sandro-tushurashvili/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Img src="./Images/Icons/icon-linkedin.svg" alt="linkedin" />
+                </a>
+                <a
+                  href="https://twitter.com/SandroTusho"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Img src="./Images/Icons/icon-twitter.svg" alt="twitter" />
+                </a>
               </HeaderIcons>
               <ProfileImg src="./Images/profile.jpg" alt="profile" />
             </div>
@@ -79,13 +97,31 @@ function Header() {
 
         <TabletViewIconsAndProfile>
           <HeaderIcons>
-            <img src="/Images/Icons/icon-github.svg" alt="github" />
-            <img
+            <a
+              href="https://github.com/Tusho7"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Img src="/Images/Icons/icon-github.svg" alt="github" />
+            </a>
+            <Img
               src="./Images/Icons/icon-frontend-mentor.svg"
               alt="front-end-mentor"
             />
-            <img src="./Images/Icons/icon-linkedin.svg" alt="linkedin" />
-            <img src="./Images/Icons/icon-twitter.svg" alt="twitter" />
+            <a
+              href="https://www.linkedin.com/in/sandro-tushurashvili/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Img src="./Images/Icons/icon-linkedin.svg" alt="linkedin" />
+            </a>
+            <a
+              href="https://twitter.com/SandroTusho"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Img src="./Images/Icons/icon-twitter.svg" alt="twitter" />
+            </a>
           </HeaderIcons>
           <ProfileImg src="./Images/profile.jpg" alt="profile" />
         </TabletViewIconsAndProfile>
@@ -142,6 +178,13 @@ const HeaderIcons = styled.div`
   }
   @media (min-width: 1440px) {
     margin-top: 44px;
+  }
+`;
+
+const Img = styled.img`
+  :hover {
+    filter: invert(65%) sepia(100%) hue-rotate(200deg) saturate(0%);
+    cursor: pointer;
   }
 `;
 
