@@ -17,8 +17,18 @@ function Projects() {
 
       <ProjectsSection>
         {data.projects.map((project) => (
-          <div key={project.title}>
+          <div key={project.title} className="main-container">
+            <div className="modal" />
             <Img src={project.img} />
+            <div className="content-details">
+              <ViewMyProjectCode href={project.viewProjectLive} target="_blank">
+                VIEW PROJECT
+              </ViewMyProjectCode>
+              <ViewMyProjectCode href={project.viewProjectCode} target="_blank">
+                VIEW CODE
+              </ViewMyProjectCode>
+            </div>
+
             <Title>{project.title}</Title>
             <MadeWith>
               <p>{project.madeWith.title}</p>
@@ -74,12 +84,7 @@ const Img = styled.img`
   @media (min-width: 1440px) {
     width: 540px;
     height: 400px;
-    &:hover {
-      cursor: pointer;
-      background: #000000;
-      mix-blend-mode: normal;
-      opacity: 0.75;
-    }
+    margin-top: 0px;
   }
 `;
 
@@ -115,6 +120,7 @@ const ContactMe = styled.a`
   text-decoration-color: #4ee1a0;
   :hover {
     cursor: pointer;
+    color: #4ee1a0;
   }
 `;
 
@@ -170,4 +176,8 @@ const ViewProject = styled.div`
 
 const ViewMyProjectCode = styled.a`
   color: #ffffff;
+  @media (min-width: 1440px) {
+    color: #4ee1a0;
+    text-underline-offset: 10px;
+  }
 `;
