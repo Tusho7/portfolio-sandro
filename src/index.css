@@ -18,6 +18,10 @@ body{
   padding-right: 15px;
 }
 
+.content-details{
+  display: none;
+}
+
 @media (min-width: 768px){
   .Padding{
     padding-left: 30px;
