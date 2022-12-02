@@ -68,7 +68,12 @@ function Header() {
           <PatternImg src="./Images/Logos/pattern-circle.svg" alt="pattern" />
 
           <Contact>
-            <ContactMe>Contact Me</ContactMe>
+            <ContactMe
+              href="https://www.linkedin.com/in/sandro-tushurashvili/"
+              target="_blank"
+            >
+              Contact Me
+            </ContactMe>
           </Contact>
         </TabletViewTextContainer>
 
@@ -270,7 +275,7 @@ const Contact = styled.div`
   }
 `;
 
-const ContactMe = styled.span`
+const ContactMe = styled.a`
   font-family: "Space Grotesk";
   font-style: normal;
   font-weight: 700;
