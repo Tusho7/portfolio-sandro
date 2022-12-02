@@ -38,15 +38,26 @@ function Projects() {
 
             <ViewProject>
               <ViewMyProjectCode href={project.viewProjectLive} target="_blank">
-                VIEW PROJECT
+                <Text>VIEW PROJECT</Text>
               </ViewMyProjectCode>
               <ViewMyProjectCode href={project.viewProjectCode} target="_blank">
-                VIEW CODE
+                <Text>VIEW CODE</Text>
               </ViewMyProjectCode>
             </ViewProject>
           </div>
         ))}
       </ProjectsSection>
+      <ViewAllMyProjects>
+        <SeeProjectsLink
+          href="https://github.com/Tusho7?tab=repositories"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <ViewAllMyProjectsHere>
+            View All My Projects Here
+          </ViewAllMyProjectsHere>
+        </SeeProjectsLink>
+      </ViewAllMyProjects>
     </div>
   );
 }
@@ -174,10 +185,56 @@ const ViewProject = styled.div`
   }
 `;
 
+const ViewAllMyProjects = styled.div`
+  width: 100%;
+  margin: auto;
+  padding-bottom: 80px;
+  @media (min-width: 768px) {
+    padding-bottom: 100px;
+  }
+`;
+
+const SeeProjectsLink = styled.a`
+  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-color: #4ee1a0;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 10px;
+  &:hover {
+    color: #4ee1a0;
+    cursor: pointer;
+  }
+`;
+
+const ViewAllMyProjectsHere = styled.p`
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 2.28571px;
+  font-size: 24px;
+  text-align: center;
+  color: #ffffff;
+  &:hover {
+    color: #4ee1a0;
+    cursor: pointer;
+  }
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+`;
+
 const ViewMyProjectCode = styled.a`
   color: #ffffff;
   @media (min-width: 1440px) {
     color: #4ee1a0;
     text-underline-offset: 10px;
   }
+`;
+
+const Text = styled.p`
+  text-decoration: underline;
+  text-decoration-color: #4ee1a0;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 10px;
 `;
