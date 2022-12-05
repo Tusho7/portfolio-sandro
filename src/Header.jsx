@@ -5,7 +5,7 @@ function Header() {
   return (
     <div>
       <MobileView>
-        <header>
+        <header className="header">
           <HeaderTitle>
             <HeaderMyName>Sandro Tushurashvili</HeaderMyName>
             <div>
@@ -83,7 +83,6 @@ function Header() {
             love
           </Text>
           <RingsImg src="./Images/Logos/pattern-rings.svg" alt="pattern" />
-          <PatternImg src="./Images/Logos/pattern-circle.svg" alt="pattern" />
 
           <Contact>
             <ContactMe
@@ -124,6 +123,7 @@ function Header() {
             </a>
           </HeaderIcons>
           <ProfileImg src="./Images/profile.jpg" alt="profile" />
+          <PatternImg src="./Images/Logos/pattern-circle.svg" alt="pattern" />
         </TabletViewIconsAndProfile>
       </TabletView>
       <TabletLine>
@@ -174,7 +174,6 @@ const HeaderIcons = styled.div`
   margin-top: 20px;
   @media (min-width: 768px) {
     gap: 32px;
-    margin-left: 60px;
   }
   @media (min-width: 1440px) {
     margin-top: 44px;
@@ -193,9 +192,8 @@ const ProfileImg = styled.img`
   margin-top: 50px;
   border-radius: 10px;
   @media (min-width: 768px) {
-    margin-top: 75px;
-    height: 452px;
-    width: 350px;
+    margin-top: 134px;
+    width: 494px;
     border-radius: 0px;
   }
 `;
@@ -220,13 +218,13 @@ const PatternImg = styled.img`
   left: 300px;
   top: 225px;
   @media (min-width: 768px) {
-    left: 700px;
-    top: 370px;
+    left: 275px;
+    top: 490px;
     z-index: 1;
   }
   @media (min-width: 1440px) {
-    left: 850px;
-    top: 440px;
+    left: -60px;
+    top: 575px;
   }
 `;
 

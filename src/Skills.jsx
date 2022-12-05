@@ -25,10 +25,6 @@ function Skills() {
           <Title>REACT</Title>
         </ReactDiv>
       </Container>
-
-      <RingsImg src="./Images/Logos/pattern-rings.svg" />
-
-      <Line />
     </div>
   );
 }
@@ -91,25 +87,5 @@ const ReactDiv = styled.div`
   margin-top: 24px;
   @media (min-width: 768px) {
     margin-top: 52px;
-  }
-`;
-
-const Line = styled.hr`
-  margin-top: 40px;
-  @media (min-width: 768px) {
-    display: none;
-  }
-`;
-
-const RingsImg = styled.img`
-  position: absolute;
-  left: 160px;
-  top: 1000px;
-  @media (min-width: 768px) {
-    top: 850px;
-    left: 550px;
-  }
-  @media (min-width: 1440px) {
-    left: 1150px;
   }
 `;

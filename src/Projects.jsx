@@ -4,7 +4,9 @@ import data from "./Data.json";
 
 function Projects() {
   return (
-    <div>
+    <Main>
+      <Line />
+      <RingsImg src="./Images/Logos/pattern-rings.svg" />
       <ProjectsTitles>
         <ProjectId>Projects</ProjectId>
         <ContactMe
@@ -58,11 +60,35 @@ function Projects() {
           </ViewAllMyProjectsHere>
         </SeeProjectsLink>
       </ViewAllMyProjects>
-    </div>
+    </Main>
   );
 }
 
 export default Projects;
+
+const Main = styled.div`
+  position: relative;
+`;
+
+const Line = styled.hr`
+  margin-top: 67px;
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
+
+const RingsImg = styled.img`
+  position: absolute;
+  left: 160px;
+  top: -70px;
+  @media (min-width: 768px) {
+    top: -200px;
+    left: 550px;
+  }
+  @media (min-width: 1440px) {
+    left: 1000px;
+  }
+`;
 
 const ProjectsTitles = styled.div`
   display: flex;

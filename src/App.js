@@ -1,5 +1,3 @@
-/* eslint-disable */
-import "./App.css";
 import Footer from "./Footer";
 /* eslint-disable */
 import Header from "./Header";
