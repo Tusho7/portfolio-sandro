@@ -12,8 +12,8 @@
 
 ### Tech Stack
 
-- <img src="readme/react.png" width="25" style="top: 8px" /> _React @ 18.2.0 - front-end framework_
-- <img src="public/Logos/styledcomponents.pn" width="25" style="top: 8px" />_Styled-Components @5.3.6 - front-end framework_
+- <img src="public/Images/Logos/react.png" width="25" style="top: 8px" /> _React @ 18.2.0 - front-end framework_
+- <img src="public/Images/Logos/styledcomponents.png" width="25" style="top: 8px" />_Styled-Components @5.3.6 - front-end framework_
 
 #
 
